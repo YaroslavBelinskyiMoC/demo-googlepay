@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Logitech MX Mouse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+
+        #googlePayButton {
+    width: 200px; /* or you can use percentage like 50% or even max-width */
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.1s;
+    display: inline-block; /* makes sure the button acts as a block, but remains inline */
+}
+
+#googlePayButton img {
+    width: 100%; /* makes the image resize with the button */
+    height: auto; /* maintains the aspect ratio of the image */
+}
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+
+        #googlePayButton {
+            background: none;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: transform 0.1s;
+        }
+
+        #googlePayButton:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .product-card img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .product-description {
+            flex: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Logitech MX Mouse Order</h2>
+
+        <div class="product-card">
+            <img src="https://resource.logitech.com/w_1600,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/gallery/mx-master-3s-mouse-top-view-pale-gray.png"
+                alt="Logitech MX Mouse">
+            <div class="product-description">
+                <h3>Logitech MX Master 3S</h3>
+                <p>The Logitech MX Master 3S is an advanced wireless mouse offering the ultimate in performance and precision. With its ergonomic design, customizable buttons, and advanced tracking capabilities, it's the perfect companion for both work and play.</p>
+            </div>
+        </div>
+
+        <p>Order Total: $99.99</p>
+        <button id="googlePayButton" onclick="processPayment()">
+            <img src="https://corefy.com/docs/integration/payment-methods/images/buy-buttons-black-small.png" alt="Google Pay">
+        </button>
+    </div>
+
+    <script>
+        function processPayment() {
+            // Add your payment processing logic here
+            // For example:
+            // googlePayClient.loadPaymentData(request);
+        }
+    </script>
+</body>
+
+</html>
